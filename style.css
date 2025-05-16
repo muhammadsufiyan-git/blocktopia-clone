@@ -302,3 +302,123 @@ nav ul li a:hover {
   margin: 10px auto;
   line-height: 1.6;
 }
+
+/* media queries   */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+  
+  .about-center {
+    max-width: 100%;
+    margin: 30px 0;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero {
+    padding: 40px 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  
+  .progress-indicator {
+    margin-top: 80px;
+  }
+  
+  .card-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 15px 20px;
+  }
+  
+  nav ul {
+    gap: 15px;
+  }
+  
+  .hero {
+    padding: 30px 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+  }
+  
+  .about-section {
+    padding: 40px 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0;
+  }
+  
+  .progress-indicator {
+    margin-top: 50px;
+    padding: 8px 15px;
+  }
+  
+  .progress-indicator .dot {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .connect-btn, .download-btn, .card-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  
+  .play-text {
+    font-size: 15vw;
+  }
+}
